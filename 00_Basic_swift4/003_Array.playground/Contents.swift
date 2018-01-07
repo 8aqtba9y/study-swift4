@@ -32,9 +32,5 @@ print("===========")
 
 // immutable array
 let emptyArray4 = ["Anna", "Alex", "Brian", "Jack"]
-emptyArray4[3] = "hello"
+//emptyArray4[3] = "hello"
 print("emptyArray4: \(emptyArray4)")
-
-
-
-
