@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yhp-eE-OcZ">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="constellation.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="nQY-vH-me1">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ny-Ag-6WE">
+                                <rect key="frame" x="68" y="76" width="74" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6ny-Ag-6WE" secondAttribute="height" multiplier="37:60" id="Z5f-y8-GPd"/>
+                                    <constraint firstAttribute="height" constant="120" id="gh9-sp-Crx"/>
+                                </constraints>
+                                <state key="normal" image="dog.png"/>
+                                <connections>
+                                    <segue destination="sfu-Nb-RBe" kind="show" id="Pbb-pP-62w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P92-xo-QnC">
+                                <rect key="frame" x="242" y="249" width="148" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="P92-xo-QnC" secondAttribute="height" multiplier="37:26" id="qtX-4k-bDT"/>
+                                    <constraint firstAttribute="width" constant="148" id="xDr-s7-J1h"/>
+                                </constraints>
+                                <state key="normal" image="eagle.png"/>
+                                <connections>
+                                    <segue destination="sNm-Rw-bZI" kind="show" id="9jX-15-uBp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKl-Nd-qkY">
+                                <rect key="frame" x="133" y="397" width="148" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="YaE-eM-7Tg"/>
+                                    <constraint firstAttribute="width" secondItem="NKl-Nd-qkY" secondAttribute="height" multiplier="37:26" id="kYb-zJ-6pG"/>
+                                </constraints>
+                                <state key="normal" image="rabbit.png"/>
+                                <connections>
+                                    <segue destination="3Hd-KF-h7W" kind="show" id="od5-5h-YCJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyo-W1-z9r">
+                                <rect key="frame" x="31" y="249" width="148" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Pyo-W1-z9r" secondAttribute="height" multiplier="37:26" id="DEW-3j-Dlq"/>
+                                    <constraint firstAttribute="width" constant="148" id="qOm-Nq-fjb"/>
+                                </constraints>
+                                <state key="normal" image="bear.png"/>
+                                <connections>
+                                    <segue destination="d7P-Qs-hgU" kind="show" id="cxR-s8-FQr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moU-wa-Sat">
+                                <rect key="frame" x="242" y="84" width="148" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="mTQ-mF-LSs"/>
+                                    <constraint firstAttribute="width" secondItem="moU-wa-Sat" secondAttribute="height" multiplier="37:26" id="pbl-h1-5hl"/>
+                                </constraints>
+                                <state key="normal" image="horse.png"/>
+                                <connections>
+                                    <segue destination="pAr-va-ra5" kind="show" id="Auq-XF-rQy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NKl-Nd-qkY" firstAttribute="centerX" secondItem="nQY-vH-me1" secondAttribute="centerX" id="GZP-hR-alt"/>
+                            <constraint firstItem="moU-wa-Sat" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="J8Q-Rg-t30"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="moU-wa-Sat" secondAttribute="trailing" constant="24" id="QiA-GB-dIC"/>
+                            <constraint firstItem="6ny-Ag-6WE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="SWf-Fy-S0f"/>
+                            <constraint firstItem="nQY-vH-me1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Uf9-GT-l4e"/>
+                            <constraint firstItem="Pyo-W1-z9r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="XiS-kf-eNW"/>
+                            <constraint firstItem="NKl-Nd-qkY" firstAttribute="top" secondItem="P92-xo-QnC" secondAttribute="bottom" constant="44" id="h6X-ZA-Fqy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nQY-vH-me1" secondAttribute="trailing" id="pvM-0o-juO"/>
+                            <constraint firstItem="nQY-vH-me1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qJ7-BC-va8"/>
+                            <constraint firstItem="6ny-Ag-6WE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="qLT-l4-HS4"/>
+                            <constraint firstItem="nQY-vH-me1" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="rYN-sA-s2H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P92-xo-QnC" secondAttribute="trailing" constant="24" id="wqe-2V-qOZ"/>
+                            <constraint firstItem="P92-xo-QnC" firstAttribute="top" secondItem="moU-wa-Sat" secondAttribute="bottom" constant="61" id="wxX-9D-gvB"/>
+                            <constraint firstItem="Pyo-W1-z9r" firstAttribute="top" secondItem="6ny-Ag-6WE" secondAttribute="bottom" constant="53" id="y3I-Yo-KXf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QA2-Tc-P6q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hfH-3X-yQy">
+            <objects>
+                <viewController id="sfu-Nb-RBe" customClass="ViewController" customModule="ConstellationExplanation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QcQ-sU-7GK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="0gQ-A5-eic">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haa-bm-VsT">
+                                <rect key="frame" x="16" y="36" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="sfu-Nb-RBe" eventType="touchUpInside" id="RXQ-x7-trb"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xI9-io-3Tq">
+                                <rect key="frame" x="20" y="74" width="374" height="662"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dogstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="aDv-ZX-BP1">
+                                        <rect key="frame" x="27" y="0.0" width="321" height="1000"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aDv-ZX-BP1" firstAttribute="centerX" secondItem="xI9-io-3Tq" secondAttribute="centerX" id="0Ey-P2-UXj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xI9-io-3Tq" firstAttribute="top" secondItem="haa-bm-VsT" secondAttribute="bottom" constant="8" id="3Au-Xp-1qN"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="haa-bm-VsT" secondAttribute="trailing" constant="20" symbolic="YES" id="3bq-SN-zHT"/>
+                            <constraint firstAttribute="bottom" secondItem="0gQ-A5-eic" secondAttribute="bottom" id="G7d-Sw-Ruf"/>
+                            <constraint firstItem="0gQ-A5-eic" firstAttribute="leading" secondItem="aBU-Of-KBZ" secondAttribute="leading" id="GK0-TR-f2U"/>
+                            <constraint firstItem="0gQ-A5-eic" firstAttribute="top" secondItem="aBU-Of-KBZ" secondAttribute="top" id="Ot4-Lq-pNF"/>
+                            <constraint firstItem="0gQ-A5-eic" firstAttribute="trailing" secondItem="aBU-Of-KBZ" secondAttribute="trailing" id="PEH-kX-h9S"/>
+                            <constraint firstItem="haa-bm-VsT" firstAttribute="top" secondItem="aBU-Of-KBZ" secondAttribute="top" constant="16" id="dPT-Is-z77"/>
+                            <constraint firstItem="haa-bm-VsT" firstAttribute="leading" secondItem="aBU-Of-KBZ" secondAttribute="leading" constant="16" id="dpT-Ed-gbM"/>
+                            <constraint firstItem="aBU-Of-KBZ" firstAttribute="trailing" secondItem="xI9-io-3Tq" secondAttribute="trailing" constant="20" id="m8i-jb-d6R"/>
+                            <constraint firstItem="xI9-io-3Tq" firstAttribute="leading" secondItem="aBU-Of-KBZ" secondAttribute="leading" constant="20" id="nKL-tM-SuP"/>
+                            <constraint firstItem="xI9-io-3Tq" firstAttribute="bottom" secondItem="aBU-Of-KBZ" secondAttribute="bottom" id="umQ-fT-hxj"/>
+                            <constraint firstItem="xI9-io-3Tq" firstAttribute="bottom" secondItem="aBU-Of-KBZ" secondAttribute="bottom" id="wCW-rd-IFm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aBU-Of-KBZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0me-Qk-M79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="-399"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aMj-7K-gNe">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Yhp-eE-OcZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RUi-UD-iB8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eHW-aE-Qdf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ohG-Np-OM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fnx-LQ-VXP">
+            <objects>
+                <viewController id="pAr-va-ra5" customClass="ViewController" customModule="ConstellationExplanation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4Y-rI-bpn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="rLF-QA-YqH">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tcy-zk-KKT">
+                                <rect key="frame" x="16" y="36" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="pAr-va-ra5" eventType="touchUpInside" id="6ca-6S-XB6"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TGE-Nj-jx3">
+                                <rect key="frame" x="20" y="74" width="374" height="662"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="horsestar.png" translatesAutoresizingMaskIntoConstraints="NO" id="PQs-kl-5ZV">
+                                        <rect key="frame" x="27" y="0.0" width="321" height="1000"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PQs-kl-5ZV" firstAttribute="centerX" secondItem="TGE-Nj-jx3" secondAttribute="centerX" id="aHC-BM-dhR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TGE-Nj-jx3" firstAttribute="bottom" secondItem="2Fs-Rg-4pf" secondAttribute="bottom" id="3Lg-6q-OTr"/>
+                            <constraint firstItem="TGE-Nj-jx3" firstAttribute="leading" secondItem="2Fs-Rg-4pf" secondAttribute="leading" constant="20" id="DVm-SW-lmm"/>
+                            <constraint firstItem="rLF-QA-YqH" firstAttribute="top" secondItem="2Fs-Rg-4pf" secondAttribute="top" id="J0o-pX-wgN"/>
+                            <constraint firstItem="2Fs-Rg-4pf" firstAttribute="trailing" secondItem="TGE-Nj-jx3" secondAttribute="trailing" constant="20" id="Jew-go-EF9"/>
+                            <constraint firstItem="TGE-Nj-jx3" firstAttribute="top" secondItem="Tcy-zk-KKT" secondAttribute="bottom" constant="8" id="PGw-tM-1Ws"/>
+                            <constraint firstAttribute="bottom" secondItem="rLF-QA-YqH" secondAttribute="bottom" id="bXt-Wf-i4o"/>
+                            <constraint firstItem="TGE-Nj-jx3" firstAttribute="bottom" secondItem="2Fs-Rg-4pf" secondAttribute="bottom" id="cpk-Xk-Pds"/>
+                            <constraint firstItem="Tcy-zk-KKT" firstAttribute="leading" secondItem="2Fs-Rg-4pf" secondAttribute="leading" constant="16" id="ddy-ii-wOL"/>
+                            <constraint firstItem="rLF-QA-YqH" firstAttribute="leading" secondItem="2Fs-Rg-4pf" secondAttribute="leading" id="goM-Np-Gzc"/>
+                            <constraint firstItem="rLF-QA-YqH" firstAttribute="trailing" secondItem="2Fs-Rg-4pf" secondAttribute="trailing" id="gqM-Bq-lCb"/>
+                            <constraint firstItem="Tcy-zk-KKT" firstAttribute="top" secondItem="2Fs-Rg-4pf" secondAttribute="top" constant="16" id="pP1-03-Im0"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tcy-zk-KKT" secondAttribute="trailing" constant="20" symbolic="YES" id="ysM-Y3-Gs0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Fs-Rg-4pf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sdh-de-Mzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2593" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qPn-bG-Jk5">
+            <objects>
+                <viewController id="d7P-Qs-hgU" customClass="ViewController" customModule="ConstellationExplanation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jGy-C9-53j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9sU-iL-K0n">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rm-V1-uIF">
+                                <rect key="frame" x="16" y="36" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="d7P-Qs-hgU" eventType="touchUpInside" id="Cft-jP-XWn"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MTn-nK-l46">
+                                <rect key="frame" x="20" y="74" width="374" height="662"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="bearstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="3tr-3e-fmb">
+                                        <rect key="frame" x="27" y="0.0" width="321" height="1000"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3tr-3e-fmb" firstAttribute="centerX" secondItem="MTn-nK-l46" secondAttribute="centerX" id="3Wc-VR-DZy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0rm-V1-uIF" firstAttribute="top" secondItem="6mV-8q-EZl" secondAttribute="top" constant="16" id="2oJ-j5-ucZ"/>
+                            <constraint firstItem="6mV-8q-EZl" firstAttribute="trailing" secondItem="MTn-nK-l46" secondAttribute="trailing" constant="20" id="677-h2-ZkB"/>
+                            <constraint firstItem="9sU-iL-K0n" firstAttribute="trailing" secondItem="6mV-8q-EZl" secondAttribute="trailing" id="Dya-1Y-wpY"/>
+                            <constraint firstAttribute="bottom" secondItem="9sU-iL-K0n" secondAttribute="bottom" id="GRW-7Z-rjE"/>
+                            <constraint firstItem="0rm-V1-uIF" firstAttribute="leading" secondItem="6mV-8q-EZl" secondAttribute="leading" constant="16" id="Urr-cQ-42a"/>
+                            <constraint firstItem="MTn-nK-l46" firstAttribute="leading" secondItem="6mV-8q-EZl" secondAttribute="leading" constant="20" id="YNd-hc-QHi"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0rm-V1-uIF" secondAttribute="trailing" constant="20" symbolic="YES" id="fcL-Tq-hVf"/>
+                            <constraint firstItem="9sU-iL-K0n" firstAttribute="top" secondItem="6mV-8q-EZl" secondAttribute="top" id="hDG-ZM-YXv"/>
+                            <constraint firstItem="9sU-iL-K0n" firstAttribute="leading" secondItem="6mV-8q-EZl" secondAttribute="leading" id="lCi-L1-Gvm"/>
+                            <constraint firstItem="MTn-nK-l46" firstAttribute="bottom" secondItem="6mV-8q-EZl" secondAttribute="bottom" id="nzQ-jY-CIE"/>
+                            <constraint firstItem="MTn-nK-l46" firstAttribute="top" secondItem="0rm-V1-uIF" secondAttribute="bottom" constant="8" id="smp-hJ-YX2"/>
+                            <constraint firstItem="MTn-nK-l46" firstAttribute="bottom" secondItem="6mV-8q-EZl" secondAttribute="bottom" id="wXy-iy-a2T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6mV-8q-EZl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4we-LO-OhR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="1015"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3a1-MU-GCe">
+            <objects>
+                <viewController id="sNm-Rw-bZI" customClass="ViewController" customModule="ConstellationExplanation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YgQ-P4-Mwc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="5N8-xZ-ufs">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCM-EK-TE1">
+                                <rect key="frame" x="16" y="36" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="sNm-Rw-bZI" eventType="touchUpInside" id="6dl-NV-i3o"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FEA-UI-YNh">
+                                <rect key="frame" x="20" y="74" width="374" height="662"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="eaglestar.png" translatesAutoresizingMaskIntoConstraints="NO" id="caD-Gj-F5S">
+                                        <rect key="frame" x="27" y="0.0" width="321" height="1000"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="caD-Gj-F5S" firstAttribute="centerX" secondItem="FEA-UI-YNh" secondAttribute="centerX" id="UZM-iM-1Xg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FEA-UI-YNh" firstAttribute="bottom" secondItem="YuU-eP-L3Q" secondAttribute="bottom" id="2Vd-Bs-ok7"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BCM-EK-TE1" secondAttribute="trailing" constant="20" symbolic="YES" id="3IM-0Q-fUW"/>
+                            <constraint firstItem="BCM-EK-TE1" firstAttribute="top" secondItem="YuU-eP-L3Q" secondAttribute="top" constant="16" id="4QB-RQ-ZFg"/>
+                            <constraint firstItem="FEA-UI-YNh" firstAttribute="leading" secondItem="YuU-eP-L3Q" secondAttribute="leading" constant="20" id="Dv4-qG-Akb"/>
+                            <constraint firstItem="FEA-UI-YNh" firstAttribute="bottom" secondItem="YuU-eP-L3Q" secondAttribute="bottom" id="E4h-xG-XoC"/>
+                            <constraint firstItem="5N8-xZ-ufs" firstAttribute="top" secondItem="YuU-eP-L3Q" secondAttribute="top" id="Gsr-Wb-oj5"/>
+                            <constraint firstItem="FEA-UI-YNh" firstAttribute="top" secondItem="BCM-EK-TE1" secondAttribute="bottom" constant="8" id="Q8v-P2-ris"/>
+                            <constraint firstItem="5N8-xZ-ufs" firstAttribute="trailing" secondItem="YuU-eP-L3Q" secondAttribute="trailing" id="XSk-q4-Ipx"/>
+                            <constraint firstAttribute="bottom" secondItem="5N8-xZ-ufs" secondAttribute="bottom" id="cf6-2Z-mKd"/>
+                            <constraint firstItem="BCM-EK-TE1" firstAttribute="leading" secondItem="YuU-eP-L3Q" secondAttribute="leading" constant="16" id="l20-UE-Gxa"/>
+                            <constraint firstItem="YuU-eP-L3Q" firstAttribute="trailing" secondItem="FEA-UI-YNh" secondAttribute="trailing" constant="20" id="m8c-hh-iC5"/>
+                            <constraint firstItem="5N8-xZ-ufs" firstAttribute="leading" secondItem="YuU-eP-L3Q" secondAttribute="leading" id="s4G-3u-iWO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YuU-eP-L3Q"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T12-Cy-h2z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="1015"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ALt-TL-von">
+            <objects>
+                <viewController id="3Hd-KF-h7W" customClass="ViewController" customModule="ConstellationExplanation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gXR-cd-T2h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aurora.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="3Ix-f6-pgg">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTm-ZX-alD">
+                                <rect key="frame" x="16" y="36" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="3Hd-KF-h7W" eventType="touchUpInside" id="grQ-Z9-QaA"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Ep-df-gpS">
+                                <rect key="frame" x="20" y="74" width="374" height="662"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="rabbitstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="oLw-wa-s0d">
+                                        <rect key="frame" x="27" y="0.0" width="321" height="1000"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="oLw-wa-s0d" firstAttribute="centerX" secondItem="2Ep-df-gpS" secondAttribute="centerX" id="sM0-3i-cRg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="321" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3Ix-f6-pgg" secondAttribute="bottom" id="15u-r9-t7a"/>
+                            <constraint firstItem="pTm-ZX-alD" firstAttribute="top" secondItem="1d0-km-Kgr" secondAttribute="top" constant="16" id="MqA-uN-yFR"/>
+                            <constraint firstItem="3Ix-f6-pgg" firstAttribute="leading" secondItem="1d0-km-Kgr" secondAttribute="leading" id="Rp2-V7-g9p"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pTm-ZX-alD" secondAttribute="trailing" constant="20" symbolic="YES" id="ZsT-j4-F2Z"/>
+                            <constraint firstItem="2Ep-df-gpS" firstAttribute="bottom" secondItem="1d0-km-Kgr" secondAttribute="bottom" id="bjL-cm-em8"/>
+                            <constraint firstItem="2Ep-df-gpS" firstAttribute="leading" secondItem="1d0-km-Kgr" secondAttribute="leading" constant="20" id="cbW-lz-5yv"/>
+                            <constraint firstItem="1d0-km-Kgr" firstAttribute="trailing" secondItem="2Ep-df-gpS" secondAttribute="trailing" constant="20" id="dkM-Yl-gBV"/>
+                            <constraint firstItem="2Ep-df-gpS" firstAttribute="bottom" secondItem="1d0-km-Kgr" secondAttribute="bottom" id="eB7-Yx-txR"/>
+                            <constraint firstItem="3Ix-f6-pgg" firstAttribute="top" secondItem="1d0-km-Kgr" secondAttribute="top" id="fU4-5e-9jc"/>
+                            <constraint firstItem="2Ep-df-gpS" firstAttribute="top" secondItem="pTm-ZX-alD" secondAttribute="bottom" constant="8" id="ot0-Lt-zwr"/>
+                            <constraint firstItem="pTm-ZX-alD" firstAttribute="leading" secondItem="1d0-km-Kgr" secondAttribute="leading" constant="16" id="pXP-lX-xpq"/>
+                            <constraint firstItem="3Ix-f6-pgg" firstAttribute="trailing" secondItem="1d0-km-Kgr" secondAttribute="trailing" id="pxR-D0-HuM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1d0-km-Kgr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gBN-Gf-uEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2593" y="1015"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aurora.jpeg" width="4016" height="4016"/>
+        <image name="bear.png" width="280" height="237"/>
+        <image name="bearstar.png" width="375" height="1000"/>
+        <image name="constellation.jpeg" width="5616" height="3744"/>
+        <image name="dog.png" width="280" height="480"/>
+        <image name="dogstar.png" width="375" height="1000"/>
+        <image name="eagle.png" width="280" height="211"/>
+        <image name="eaglestar.png" width="375" height="1000"/>
+        <image name="horse.png" width="280" height="280"/>
+        <image name="horsestar.png" width="375" height="1000"/>
+        <image name="rabbit.png" width="280" height="185"/>
+        <image name="rabbitstar.png" width="375" height="1000"/>
+    </resources>
+</document>
