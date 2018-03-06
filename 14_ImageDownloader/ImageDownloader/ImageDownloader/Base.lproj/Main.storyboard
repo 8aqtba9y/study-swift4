@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gJ6-hj-SLc">
+                                <rect key="frame" x="42.666666666666657" y="65" width="329" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="329" id="HUq-bb-Amm"/>
+                                    <constraint firstAttribute="width" secondItem="gJ6-hj-SLc" secondAttribute="height" multiplier="329:242" id="Nc9-wF-qnY"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBd-4U-xAX">
+                                <rect key="frame" x="148.66666666666666" y="387" width="116.99999999999997" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="2NJ-Y7-9YY"/>
+                                    <constraint firstAttribute="width" secondItem="pBd-4U-xAX" secondAttribute="height" multiplier="117:44" id="jKm-XE-1b4"/>
+                                </constraints>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="downloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9P-g4-q57"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Are-Q7-fsX">
+                                <rect key="frame" x="162" y="463" width="90" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Are-Q7-fsX" secondAttribute="height" multiplier="45:22" id="053-dx-9M8"/>
+                                    <constraint firstAttribute="width" constant="90" id="0cy-pq-Nw1"/>
+                                </constraints>
+                                <state key="normal" title="Resume"/>
+                                <connections>
+                                    <action selector="resumeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QvE-KF-Kjp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAF-3D-lku">
+                                <rect key="frame" x="301" y="463" width="90" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hAF-3D-lku" secondAttribute="height" multiplier="45:22" id="asI-mv-rLT"/>
+                                    <constraint firstAttribute="width" constant="90" id="sgx-9C-4HX"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypx-2t-gCa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xiu-cl-Vc4">
+                                <rect key="frame" x="23" y="463" width="90" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="xiu-cl-Vc4" secondAttribute="height" multiplier="45:22" id="48U-wR-foD"/>
+                                    <constraint firstAttribute="width" constant="90" id="Fca-9L-o5E"/>
+                                </constraints>
+                                <state key="normal" title="Suspend"/>
+                                <connections>
+                                    <action selector="suspendAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gWk-66-YEm"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="HiB-dk-zug">
+                                <rect key="frame" x="23" y="348" width="368" height="2"/>
+                            </progressView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Adm-w9-kpk">
+                                <rect key="frame" x="189" y="168" width="37" height="37"/>
+                                <color key="color" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pBd-4U-xAX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="25N-Nw-rPf"/>
+                            <constraint firstItem="hAF-3D-lku" firstAttribute="top" secondItem="HiB-dk-zug" secondAttribute="bottom" constant="113" id="F9f-59-2te"/>
+                            <constraint firstItem="gJ6-hj-SLc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FV8-r3-np5"/>
+                            <constraint firstItem="Adm-w9-kpk" firstAttribute="centerY" secondItem="gJ6-hj-SLc" secondAttribute="centerY" id="J7c-Im-nRc"/>
+                            <constraint firstItem="pBd-4U-xAX" firstAttribute="top" secondItem="HiB-dk-zug" secondAttribute="bottom" constant="37" id="O7Y-UY-53Q"/>
+                            <constraint firstItem="xiu-cl-Vc4" firstAttribute="top" secondItem="HiB-dk-zug" secondAttribute="bottom" constant="113" id="OH0-wj-0t9"/>
+                            <constraint firstItem="Are-Q7-fsX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qca-zC-izC"/>
+                            <constraint firstItem="xiu-cl-Vc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="QsU-d5-vs6"/>
+                            <constraint firstItem="HiB-dk-zug" firstAttribute="top" secondItem="gJ6-hj-SLc" secondAttribute="bottom" constant="41" id="TqK-vC-tQ7"/>
+                            <constraint firstItem="gJ6-hj-SLc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="UgX-X8-E9o"/>
+                            <constraint firstItem="HiB-dk-zug" firstAttribute="leading" secondItem="xiu-cl-Vc4" secondAttribute="leading" id="bme-h0-cxn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAF-3D-lku" secondAttribute="trailing" constant="23" id="fTA-uk-gjh"/>
+                            <constraint firstItem="Are-Q7-fsX" firstAttribute="top" secondItem="pBd-4U-xAX" secondAttribute="bottom" constant="32" id="pMe-5E-qYx"/>
+                            <constraint firstItem="HiB-dk-zug" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wru-37-SDo"/>
+                            <constraint firstItem="Adm-w9-kpk" firstAttribute="centerX" secondItem="gJ6-hj-SLc" secondAttribute="centerX" id="wts-tT-j6Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="gJ6-hj-SLc" id="7na-dZ-pO7"/>
+                        <outlet property="indicatorView" destination="Adm-w9-kpk" id="YRO-qY-wL2"/>
+                        <outlet property="progressView" destination="HiB-dk-zug" id="Oba-RW-R0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
+        </scene>
+    </scenes>
+</document>
